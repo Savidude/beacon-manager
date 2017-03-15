@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>AddAction</servlet-name>
+        <servlet-class>org.wso2.beaconManager.servlet.action.AddAction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RequestEndpoint</servlet-name>
+        <servlet-class>org.wso2.beaconManager.servlet.action.RequestEndpoint</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>org.wso2.beaconManagerTest.TestServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImageUploadHandler</servlet-name>
+        <servlet-class>org.wso2.beaconManager.servlet.action.ImageUploadHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImageDownloadHandler</servlet-name>
+        <servlet-class>org.wso2.beaconManager.servlet.action.ImageDownloadHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewLocations</servlet-name>
+        <servlet-class>org.wso2.beaconManager.servlet.location.ViewLocations</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditLocation</servlet-name>
+        <servlet-class>org.wso2.beaconManager.servlet.location.EditLocation</servlet-class>
+    </servlet>
+    
+    
+    
+    
+    
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>AddAction</servlet-name>
+        <url-pattern>/AddAction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestEndpoint</servlet-name>
+        <url-pattern>/request_endpoint</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImageUploadHandler</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImageDownloadHandler</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewLocations</servlet-name>
+        <url-pattern>/locations</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditLocation</servlet-name>
+        <url-pattern>/locations_edit</url-pattern>
+    </servlet-mapping>
+</web-app>
